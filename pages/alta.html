@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alta de Productos - TiendaTech</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>TiendaTech</h1>
+    <nav>
+      <a href="../index.html">Inicio</a>
+      <a href="alta.html">Alta de Productos</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="nosotros.html">Nosotros</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Alta de Productos</h2>
+
+    <form>
+      <label>Nombre *</label>
+      <input type="text" required minlength="3" maxlength="60" placeholder="Teclado Mecánico RGB">
+
+      <label>Precio *</label>
+      <input type="number" required min="0" step="0.01" placeholder="25000">
+
+      <label>Stock *</label>
+      <input type="number" required min="0" step="1" placeholder="10">
+
+      <label>Marca *</label>
+      <input type="text" required placeholder="HyperX / Logitech / Redragon">
+
+      <label>Categoría *</label>
+      <select required>
+        <option value="">Seleccioná una categoría</option>
+        <option value="teclados">Teclados</option>
+        <option value="mouses">Mouses</option>
+        <option value="auriculares">Auriculares</option>
+        <option value="alfombrillas">Alfombrillas</option>
+        <option value="accesorios">Accesorios</option>
+      </select>
+
+      <label>Descripción corta *</label>
+      <input type="text" required minlength="10" maxlength="100" placeholder="Switches rojos, RGB y cable desmontable.">
+
+      <label>Descripción larga *</label>
+      <textarea required minlength="20" maxlength="600"
+        placeholder="Descripción detallada del producto, materiales, compatibilidad, etc."></textarea>
+      
+        <label>Foto *</label>
+      <input type="file" accept="image/*" required>
+
+      
+      <button type="submit">Guardar producto</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 TiendaTech</p>
+  </footer>
+<script src="../js/script.js"></script>
+
+</body>
+
+</html>
