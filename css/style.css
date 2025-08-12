@@ -8,15 +8,21 @@ body {
 
 /* ===== HEADER ===== */
 header {
-  background-color: #333;
+  background-color: #000000;
   color: white;
   padding: 10px;
+}
+
+img{
+  height: 90px;
+  width: 150px;
 }
 
 header h1 {
   margin: 0;
 }
-h2{
+
+h2 {
   text-align: center;
 }
 
@@ -51,13 +57,13 @@ nav a:hover {
   width: 280px;
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
   transform: scale(1.03);
-  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .card img {
@@ -100,7 +106,7 @@ form {
   margin: 20px auto;
   border-radius: 10px;
   max-width: 500px;
-  box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 label {
@@ -108,7 +114,9 @@ label {
   margin-top: 10px;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
   width: 100%;
   padding: 8px;
   margin-top: 5px;
@@ -130,13 +138,47 @@ button:hover {
   background-color: #555;
 }
 
-/* ===== FOOTER ===== */
-footer {
-  position: fixed;
-  background-color: #333;
+.banner-nosotros {
+  background-image: url('../img/ChatGPT\ Image\ 11\ ago\ 2025\,\ 09_32_22\ p.m..png');
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
   color: white;
   text-align: center;
-  bottom: 0;
-  left: 0;
+}
+
+.banner-nosotros h2 {
+  font-size: 2rem;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+
+footer {
+
+  background-color: #000000;
+  color: white;
+  text-align: center;
   width: 100%;
+  height: 30px;
+}
+
+
+
+/* version mobile*/
+
+@media (max-width: 768px) {
+  .banner-nosotros {
+    height: 220px;
+    background-position: 30% center;
+  }
+
+  .banner-nosotros h2 {
+    font-size: 24px;
+    padding: 6px 10px;
+  }
 }
